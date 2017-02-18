@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FA41DBC9-9DCE-4DAF-A7B9-6970CF79348C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SCHOTT</RootNamespace>
+    <AssemblyName>SCHOTT.WinForms</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\SCHOTT.WinForms Debug\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\SCHOTT.WinForms\</OutputPath>
+    <DefineConstants>
+    </DefineConstants>
+    <Optimize>false</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="SCHOTT.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
+      <HintPath>..\..\packages\SCHOTT.Core.1.0.0\lib\net35\SCHOTT.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Threading, Version=1.0.2856.102, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\TaskParallelLibrary.1.0.2856.0\lib\Net35\System.Threading.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking, Version=2.13.0.0, Culture=neutral, PublicKeyToken=5cded1a1a0a7b481, processorArchitecture=MSIL">
+      <HintPath>..\packages\DockPanelSuite.2.13.0\lib\net35-client\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SCHOTT\WinForms\Controls\Buttons\FocusButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SCHOTT\WinForms\Controls\Buttons\ToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SCHOTT\WinForms\Controls\Combo Controls\SliderNumericCombo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SCHOTT\WinForms\Controls\Combo Controls\SliderNumericCombo.Designer.cs">
+      <DependentUpon>SliderNumericCombo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOTT\WinForms\Controls\Group Boxes\GrowGroupBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SCHOTT\WinForms\Controls\Group Boxes\HeaderGroupbox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SCHOTT\WinForms\Controls\Group Boxes\HeaderGroupbox.Designer.cs">
+      <DependentUpon>HeaderGroupbox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOTT\WinForms\Controls\Labels\GrowLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SCHOTT\WinForms\Controls\Labels\TransparentLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SCHOTT\WinForms\Controls\Panels\ScrollingPanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SCHOTT\WinForms\Controls\TextBoxes\AdvancedRichTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SCHOTT\WinForms\Controls\Trackbar\PrettyTrack.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="SCHOTT\WinForms\Controls\Utilities\DetectEnterExit.cs" />
+    <Compile Include="SCHOTT\WinForms\Controls\Utilities\Image.cs" />
+    <Compile Include="SCHOTT\WinForms\Dialogs\CrossThreadDialogs.cs" />
+    <Compile Include="SCHOTT\WinForms\Dialogs\CustomDialogBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SCHOTT\WinForms\Dialogs\CustomDialogBox.Designer.cs">
+      <DependentUpon>CustomDialogBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SCHOTT\WinForms\Docking\Docking.cs" />
+    <Compile Include="SCHOTT\Core\Extensions\ClosingWorkerExtensions.cs" />
+    <Compile Include="SCHOTT\WinForms\WindowInformation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Licenses\SCHOTT.WinForms License - MIT.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SCHOTT\WinForms\Controls\Combo Controls\SliderNumericCombo.resx">
+      <DependentUpon>SliderNumericCombo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOTT\WinForms\Controls\Group Boxes\HeaderGroupbox.resx">
+      <DependentUpon>HeaderGroupbox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SCHOTT\WinForms\Dialogs\CustomDialogBox.resx">
+      <DependentUpon>CustomDialogBox.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Licenses\WeifenLuo License - MIT.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

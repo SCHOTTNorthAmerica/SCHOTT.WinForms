@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package >
+	<metadata>
+		<id>SCHOTT.WinForms</id>
+		<version>1.0.0</version>
+		<title>SCHOTT.WinForms Library</title>
+		<authors>jgvicke</authors>
+		<owners>jgvicke</owners>
+		<licenseUrl>https://github.com/SCHOTTNorthAmerica/SCHOTT.WinForms/blob/master/Licenses/SCHOTT.WinForms%20License%20-%20MIT.txt</licenseUrl>
+		<projectUrl>https://github.com/SCHOTTNorthAmerica/SCHOTT.WinForms</projectUrl>
+		<iconUrl>https://avatars0.githubusercontent.com/u/23213816?v=3&amp;s=200</iconUrl>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>Core functions for Windows Forms used by SCHOTT products.</description>
+		<releaseNotes>Initial Release</releaseNotes>
+		<copyright>Copyright 2016</copyright>
+		<tags>SCHOTT WinForms</tags>
+		<dependencies>
+			<dependency id="SCHOTT.Core" version="1.0.0" />
+			<dependency id="DockPanelSuite" version="2.13.0" />
+		</dependencies>
+	</metadata>
+	<files>
+		<file src="bin\SCHOTT.WinForms\SCHOTT.WinForms.dll" target="lib\net35\SCHOTT.WinForms.dll" />
+		<file src="bin\SCHOTT.WinForms\SCHOTT.WinForms.xml" target="lib\net35\SCHOTT.WinForms.xml" />
+	</files>
+</package>
